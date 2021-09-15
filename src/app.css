@@ -10,3 +10,8 @@ p {
     height: 100vh;
     overflow: scroll;
 }
+
+span {
+    font-family: 'arial';
+    color: blue;
+}
