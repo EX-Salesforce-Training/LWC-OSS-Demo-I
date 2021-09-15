@@ -1,5 +1,5 @@
 {
-  "name": "@wcd/harveyhill.lwc-ktj26qw4",
+  "name": "@wcd/harveyhill.lwc-oss-demos",
   "version": "0.0.0",
   "scripts": {
     "serve": "npx wcd-cli@latest serve NUEBQkOeCRdknwrF3JMv --open"
