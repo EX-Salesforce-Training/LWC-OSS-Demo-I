@@ -1,4 +1,4 @@
-import { api, LightningElement, track, wire } from 'lwc';
+import { api, LightningElement } from 'lwc';
 
 export default class DemoOne extends LightningElement {
 
@@ -11,8 +11,9 @@ export default class DemoOne extends LightningElement {
     @api
     greetingThree = 'Konnichiwa World';
 
+    //Lifecycle Hooks
     connectedCallback() {
-    
+        
     }
 
     renderedCallback(){
@@ -25,6 +26,10 @@ export default class DemoOne extends LightningElement {
 
     errorCallback(){
 
+    }
+
+    handleSayHello(event){
+        this.greetingOne = event.detail;
     }
 
 }
