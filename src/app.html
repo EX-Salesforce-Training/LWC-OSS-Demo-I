@@ -1,23 +1,6 @@
 <template>
 	<div class="app slds-p-around_x-large">
 		<h1 class="slds-text-heading_large">{title}</h1>
-		<h3>Write JavaScript, HTML, and CSS code, and preview the output in the interactive code editor.</h3>
-		<c-demo-one></c-demo-one>
-		<!-- Using an if statement -->
-		<template if:true={showFeatures}>
-			<div class="slds-p-top_large">
-				<h2 class="slds-text-heading_medium">Features</h2>
-
-				<!-- Using a for statement -->
-				<template for:each={features} for:item='feature'>
-					<c-child label={feature.label} key={feature.label}>
-
-						<!-- Specifying the 'icon' slot for c-child -->
-						<lightning-icon icon-name={feature.icon} size="x-small" slot="icon"></lightning-icon>
-					</c-child>
-				</template>
-			</div>
-		</template>
-
+		<c-carousel></c-carousel>
 	</div>
 </template>
