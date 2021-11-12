@@ -1,6 +1,20 @@
 <template>
 	<div class="app slds-p-around_x-large">
 		<h1 class="slds-text-heading_large">{title}</h1>
-		<c-demo-one></c-demo-one>
+		<lightning-layout pull-to-boundary="medium">
+			<lightning-layout-item flexibility="auto" padding="horizontal-medium">
+				<c-demo-two greeting-three="Konbanwa"></c-demo-two>
+			</lightning-layout-item>
+			<lightning-layout-item flexibility="auto" padding="horizontal-medium">
+				<c-demo-two greeting-three="Konnichiwa"></c-demo-two>
+			</lightning-layout-item>
+			<lightning-layout-item flexibility="auto" padding="horizontal-medium">
+				<c-demo-two greeting-three="Ohayou Gozaimasu"></c-demo-two>
+			</lightning-layout-item>
+			<lightning-layout-item flexibility="auto" padding="horizontal-medium">
+				<c-demo-two></c-demo-two>
+			</lightning-layout-item>
+		</lightning-layout>
+
 	</div>
 </template>
