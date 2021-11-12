@@ -1,0 +1,3 @@
+/*@import allows you to share css styles between components
+You'll use @import followed by the namespace/css file. */
+@import 'c/app.css';
